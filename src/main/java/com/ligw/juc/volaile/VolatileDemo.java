@@ -68,6 +68,7 @@ class MyData {
     }
 
     public void increase() {
+        // ++操作在多线程下是非线程安全的，底层分为三个操作：...
         number++;
     }
 
